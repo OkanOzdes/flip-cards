@@ -14,10 +14,9 @@
 
 .card-container {
     width: 100%;
-    min-height: 90%;
+    min-height: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
 }
 
 .card {
@@ -88,10 +87,14 @@
     padding-top: 40px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 990px) {
     .card-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        margin: 30px auto 0;
     }
 
     .wrapper {
@@ -103,7 +106,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 605px) {
     .card-container {
         display: grid;
         grid-template-columns: 1fr;
